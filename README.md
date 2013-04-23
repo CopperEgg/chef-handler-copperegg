@@ -11,7 +11,7 @@ http://wiki.opscode.com/display/chef/Exception+and+Report+Handlers
 To enable this functionality, add the following in your run_list:
 * copperegg 
 * chef_handler
-* cappereg-handler
+* coppereg-handler
 
 On your next Chef run, the gem 'chef-handler-copperegg.gem' will be downloaded and installed on the client.
 
