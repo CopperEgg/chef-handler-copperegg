@@ -1,24 +1,21 @@
-# Chef::Handler::Copperegg
+chef-handler-copperegg
 
-TODO: Write a gem description
+Chef Handler to create annotations at CopperEgg for chef runs.
 
-## Installation
+====Description====
 
-Add this line to your application's Gemfile:
+This is a simple Chef report and exception handler that reports status of a Chef run to your CopperEgg UI.
 
-    gem 'chef-handler-copperegg'
+http://wiki.opscode.com/display/chef/Exception+and+Report+Handlers
 
-And then execute:
+To enable this functionality, add the following in your run_list:
+* copperegg 
+* chef_handler
+* cappereg-handler
 
-    $ bundle
+On your next Chef run, the gem 'chef-handler-copperegg.gem' will be downloaded and installed on the client.
 
-Or install it yourself as:
-
-    $ gem install chef-handler-copperegg
-
-## Usage
-
-TODO: Write usage instructions here
+You shouldn't need to do anything else.
 
 ## Contributing
 
@@ -27,3 +24,4 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
