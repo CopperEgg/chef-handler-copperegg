@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = 'chef-handler-copperegg'
-  s.version       ='0.0.7'
+  s.version       ='0.1.3'
   s.default_executable = 'chef-handler-copperegg'
 
   s.platform      = Gem::Platform::RUBY
