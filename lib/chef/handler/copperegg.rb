@@ -22,7 +22,7 @@ class Chef
         if elapsed < 60                                       # force duration to be >= 1 min for annotations to display
           annot_endtime = run_status.start_time.to_i + 60
         else
-          annot_endtime = run_statusend_time.to_i
+          annot_endtime = run_status.end_time.to_i
         end
         elapsed_str = elapsed.to_s + (elapsed <= 1 ? 'second' : 'seconds')
 
