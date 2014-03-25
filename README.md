@@ -2,6 +2,12 @@ chef-handler-copperegg
 
 Chef Handler to create annotations at CopperEgg for chef runs.
 
+Recent Changes
+Updated to version 0.1.4 on 3/25/14
+
+NOTE: Other that the updated version code (from 0.1.3 to 0.1.4), this code has not been modified since 4/2013. 
+
+
 ====Description====
 
 This is a simple Chef report and exception handler that reports status of a Chef run to your CopperEgg UI.
