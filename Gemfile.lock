@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    chef-handler-copperegg (0.0.8)
+    chef-handler-copperegg (0.1.4)
 
 GEM
   remote: https://rubygems.org/
