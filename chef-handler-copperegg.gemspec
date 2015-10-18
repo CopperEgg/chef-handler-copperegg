@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.authors       = ["scott johnson"]
   s.email         = ["sjohnson@copperegg.com"]
-  s.description   = %q{This Handler will report the metrics for a chef-client run to CopperEgg.}
-  s.summary       = %q{Chef Handler for CopperEgg metrics}
+  s.description   = %q{This Handler will report the metrics for a chef-client run to Uptime Cloud Monitor.}
+  s.summary       = %q{Chef Handler for Uptime Cloud Monitor metrics}
   s.license       = 'MIT'
 
   s.require_paths = ["lib"]

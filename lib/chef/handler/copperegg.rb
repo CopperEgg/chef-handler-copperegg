@@ -27,17 +27,17 @@ class Chef
         elapsed_str = elapsed.to_s + (elapsed <= 1 ? 'second' : 'seconds')
 
         if run_status.success? && @annotate_success 
-          Chef::Log.info("CopperEgg Chef Handler: Chef Run Successful, host:  #{@hostname}")
+          Chef::Log.info("Uptime Cloud Monitor Chef Handler: Chef Run Successful, host:  #{@hostname}")
           note = "Chef Run Completed in #{elapsed_str} on #{@hostname}. Updated #{run_status.updated_resources.length} of #{run_status.all_resources.length} Resources. Tags are #{@tags}"
           label =  'green'       
 
         elsif run_status.failed? && @annotate_fail
-          Chef::Log.info("CopperEgg Chef Handler: Chef Run Failed, host:  #{@hostname}")
+          Chef::Log.info("Uptime Cloud Monitor Chef Handler: Chef Run Failed, host:  #{@hostname}")
           note = "Chef Run FAILED in #{elapsed_str} on #{@hostname}; #{run_status.formatted_exception}.  Tags are #{@tags}"
           label =  'red'
 
         else
-          Chef::Log.debug("CopperEgg Chef Handler: Unknown")
+          Chef::Log.debug("Uptime Cloud Monitor Chef Handler: Unknown")
           return
         end
 
